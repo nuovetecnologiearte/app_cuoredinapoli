@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">#CUOREDINAPOLI</string>
+    <string name="title_home">Home</string>
+    <string name="title_info">Info</string>
+    <string name="title_contatti">Contatti</string>
+    <string name="cuore_loader">loaderCuore</string>
+    <string name="infoText">
+        #CUOREDINAPOLI è un contenitore di significati eterogenei, strettamente connessi all’esperienza della relazione, ed è una piattaforma di condivisione e di comunicazione che produce uno scambio di esperienze e di energie in grado di modificare l’animo e il sentire dei soggetti coinvolti.\n\n
+È il punto di partenza ideale per costruire un percorso di appartenenza comune: #CUOREDINAPOLI è un segno che amplifica il senso di riappropriazione del territorio e della città. utilizzato da subito dai cittadini, è entrato nel tessuto sociale come hashtag per raccontare e raccontarsi.\n\n
+Il territorio è il luogo in cui realizzare una diffusa scultura antropologica relazionale che si articola all’interno del percorso urbano e che vive delle relazioni tra i vari soggetti che contribuiscono costantemente ad alimentarlo.\n
+    </string>
+    <string name="logo_cuoredinapoli">Logo Cuoredinapoli</string>
+    <string name="contattiText">Puoi contattarci all\'indirizzo email \n info.cuoredinapoli@gmail.com</string>
+    <string name="fb">Facebook</string>
+    <string name="ig">Instagram</string>
+    <string name="title_ar">AR</string>
+</resources>
