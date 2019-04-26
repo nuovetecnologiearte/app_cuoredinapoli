@@ -53,8 +53,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             case R.id.navigation_info:
                 fragment = new InfoFragment();
                 break;
-            case R.id.navigation_contatti:
-                fragment = new ContattiFragment();
+            case R.id.navigation_ar:
+                fragment = new ArFragment();
                 break;
         }
         return loadFragment(fragment);
@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     }
 
 
-    public void startAR(MenuItem item) {
+    public void startAr(View view ) {
         Intent intent = new Intent(this, mContext.class);
         startActivity(intent);
     }

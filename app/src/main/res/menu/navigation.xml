@@ -12,15 +12,9 @@
         android:title="@string/title_info" />
 
     <item
-        android:id="@+id/navigation_contatti"
-        android:icon="@drawable/ic_email_black_24dp"
-        android:title="@string/title_contatti" />
-
-    <item
         android:id="@+id/navigation_ar"
         android:icon="@drawable/ic_ar_foreground"
-        android:title="@string/title_ar"
-        android:onClick="startAR"/>
+        android:title="@string/title_ar" />
 
 
 </menu>

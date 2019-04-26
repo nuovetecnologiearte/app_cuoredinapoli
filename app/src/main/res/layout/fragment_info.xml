@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:fillViewport="true">
@@ -23,20 +24,68 @@
             android:contentDescription="@string/logo_cuoredinapoli"
             android:src="@mipmap/ic_cuore_loader_foreground" />
 
+
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/contatti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/concept"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/contattiText"
+            android:textAlignment="center"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/concept"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/splash_cuore"
             android:layout_marginStart="8dp"
             android:layout_marginLeft="8dp"
-            android:layout_marginTop="36dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
             android:padding="@dimen/standardPadding"
             android:text="@string/infoText"
             android:textAlignment="center"
             android:textColor="@android:color/white" />
+
+        <ImageButton
+            android:id="@+id/ig"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/contatti"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="@dimen/borderDistance"
+            android:layout_marginBottom="60dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/ig"
+            android:onClick="openIg"
+            android:scaleType="fitStart"
+            android:src="@mipmap/ic_instagram_foreground" />
+
+        <ImageButton
+            android:id="@+id/fb"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/contatti"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="102dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="60dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/fb"
+
+            android:onClick="openFb"
+            android:scaleType="fitStart"
+            android:src="@mipmap/ic_facebook_foreground" />
 
     </RelativeLayout>
 </ScrollView>

@@ -14,4 +14,7 @@ Il territorio è il luogo in cui realizzare una diffusa scultura antropologica r
     <string name="fb">Facebook</string>
     <string name="ig">Instagram</string>
     <string name="title_ar">AR</string>
+    <string name="infoAr">Con la Realtà Aumentata puoi ottenere nuove informazioni su ciò che ti circonda e scoprire aspetti nascosti della realtà.
+    Inquadra il segno #CUOREDINAPOLI o le varie zone dei Quartieri Spagnoli sulla mappa.</string>
+    <string name="buttonAR">Lancia la Realtà Aumentata</string>
 </resources>
