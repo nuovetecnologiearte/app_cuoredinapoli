@@ -12,9 +12,10 @@
 
 
         <TextView
-            android:id="@+id/titAr"
+            android:id="@+id/titProgramma"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textAllCaps="true"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="@dimen/standardBorderMargin"
@@ -23,59 +24,24 @@
             android:layout_marginEnd="@dimen/standardBorderMargin"
             android:layout_marginRight="@dimen/standardBorderMargin"
             android:padding="@dimen/standardPadding"
-            android:text="@string/title_Ar"
+            android:text="@string/title_Programma"
             android:textAlignment="center"
             android:textColor="@android:color/white"
             android:textSize="@dimen/titolo"
-            android:textStyle="bold"
-            android:textAllCaps="true"
-            />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/infoAr"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/titAr"
+            android:layout_below="@+id/titProgramma"
             android:layout_marginStart="@dimen/standardBorderMargin"
             android:layout_marginLeft="@dimen/standardBorderMargin"
             android:layout_marginTop="@dimen/topMargin"
             android:layout_marginEnd="@dimen/standardBorderMargin"
             android:layout_marginRight="@dimen/standardBorderMargin"
             android:padding="@dimen/standardPadding"
-            android:text="@string/infoAr"
-            android:textAlignment="center"
-
-            android:textColor="@android:color/white" />
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/infoAr"
-            android:textAllCaps="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginStart="@dimen/standardBorderMargin"
-            android:layout_marginLeft="@dimen/standardBorderMargin"
-            android:layout_marginTop="@dimen/topMargin"
-            android:layout_marginEnd="@dimen/standardBorderMargin"
-            android:layout_marginRight="@dimen/standardBorderMargin"
-            android:background="@drawable/button_border"
-            android:onClick="startAr"
-            android:padding="@dimen/standardPadding"
-            android:text="@string/buttonAR" />
-
-        <TextView
-            android:id="@+id/infoAr2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/button"
-            android:layout_marginStart="@dimen/standardBorderMargin"
-            android:layout_marginLeft="@dimen/standardBorderMargin"
-            android:layout_marginTop="@dimen/topMargin"
-            android:layout_marginEnd="@dimen/standardBorderMargin"
-            android:layout_marginRight="@dimen/standardBorderMargin"
-            android:padding="@dimen/standardPadding"
-            android:text="@string/infoAr2"
+            android:text="@string/infoProgramma"
             android:textAlignment="center"
 
             android:textColor="@android:color/white" />

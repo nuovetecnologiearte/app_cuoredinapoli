@@ -4,4 +4,7 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="standardPadding">10dp</dimen>
     <dimen name="borderDistance">100dp</dimen>
+    <dimen name="topMargin">20dp</dimen>
+    <dimen name="standardBorderMargin">8dp</dimen>
+    <dimen name="titolo">22sp</dimen>
 </resources>

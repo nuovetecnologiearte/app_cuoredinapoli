@@ -12,11 +12,9 @@
 
 
         <TextView
-            android:textAllCaps="true"
-            android:id="@+id/titConcept"
+            android:id="@+id/titPartecipanti"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/white"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="@dimen/standardBorderMargin"
@@ -25,30 +23,27 @@
             android:layout_marginEnd="@dimen/standardBorderMargin"
             android:layout_marginRight="@dimen/standardBorderMargin"
             android:padding="@dimen/standardPadding"
-            android:text="@string/title_concept"
+            android:text="@string/title_Partecipanti"
             android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
             android:textSize="@dimen/titolo"
-            android:textStyle="bold"
-            />
+            android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/concept"
+            android:id="@+id/infoPartecipanti"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/titConcept"
+            android:layout_below="@+id/titPartecipanti"
             android:layout_marginStart="@dimen/standardBorderMargin"
             android:layout_marginLeft="@dimen/standardBorderMargin"
-            android:layout_marginTop="@dimen/topMargin"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="@dimen/standardBorderMargin"
             android:layout_marginRight="@dimen/standardBorderMargin"
             android:padding="@dimen/standardPadding"
-            android:text="@string/infoText"
+            android:text="@string/infoPartecipanti"
             android:textAlignment="center"
 
             android:textColor="@android:color/white" />
-
-
-
-
     </RelativeLayout>
 </ScrollView>

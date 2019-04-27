@@ -5,9 +5,11 @@
     <string name="title_contatti">Contatti</string>
     <string name="cuore_loader">loaderCuore</string>
     <string name="infoText">
-        #CUOREDINAPOLI è un contenitore di significati eterogenei, strettamente connessi all’esperienza della relazione, ed è una piattaforma di condivisione e di comunicazione che produce uno scambio di esperienze e di energie in grado di modificare l’animo e il sentire dei soggetti coinvolti.\n\n
-È il punto di partenza ideale per costruire un percorso di appartenenza comune: #CUOREDINAPOLI è un segno che amplifica il senso di riappropriazione del territorio e della città. utilizzato da subito dai cittadini, è entrato nel tessuto sociale come hashtag per raccontare e raccontarsi.\n\n
-Il territorio è il luogo in cui realizzare una diffusa scultura antropologica relazionale che si articola all’interno del percorso urbano e che vive delle relazioni tra i vari soggetti che contribuiscono costantemente ad alimentarlo.\n
+                \"Rivoluzionaria\" è un\'intuizione, una consapevolezza che è capace di sovvertire direzioni, modi di pensare, azioni e relazioni. Un piccolo gesto può diventare un esempio seguito da molti e stravolgere positivamente
+        l\'intera dinamica di un territorio: la rivoluzione inizia da qui, da te, con gesti quotidiani di amore per il territorio comune.\n\n
+\"Rivoluzionaria\" è la consapevolezza di essere donne e uomini che attraversano relazioni, città, strade, storie e che sanno di essere parte di un flusso, i cui elementi si influenzano reciprocamente.\n\n
+\"Rivoluzionaria\" è la consapevolezza che ogni cosa esiste in relazione l\'una con l\'altra e in relazione a te che puoi influenzare e cambiare queste dinamiche.\n\n
+Ed è \"Una rivoluzionaria presa di coscienza\" il punto di partenza e di arrivo di #CUOREDINAPOLI.\n\n
     </string>
     <string name="logo_cuoredinapoli">Logo Cuoredinapoli</string>
     <string name="contattiText">Puoi contattarci all\'indirizzo email \n info.cuoredinapoli@gmail.com</string>
@@ -17,4 +19,21 @@ Il territorio è il luogo in cui realizzare una diffusa scultura antropologica r
     <string name="infoAr">Con la Realtà Aumentata puoi ottenere nuove informazioni su ciò che ti circonda e scoprire aspetti nascosti della realtà.
     Inquadra il segno #CUOREDINAPOLI o le varie zone dei Quartieri Spagnoli sulla mappa.</string>
     <string name="buttonAR">Lancia la Realtà Aumentata</string>
+    <string name="mi_programma">Programma</string>
+    <string name="title_concept">Il Concept</string>
+    <string name="title_Ar">Realtà Aumentata</string>
+    <string name="title_Programma">Il Programma del 4 Maggio</string>
+    <string name="infoProgramma">Lorem</string>
+    <string name="infoAr2">Per poter utilizzare la funzionalità della Realtà Aumentata, il tuo dispositivo deve
+    essere compatibile\ncon Google ARCore.</string>
+    <string name="mi_partecipanti">Partecipanti</string>
+    <string name="mi_credits">Credits</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_Partecipanti">Chi Partecipa</string>
+    <string name="infoPartecipanti">Lorem</string>
+    <string name="title_Credits">Credits</string>
+    <string name="infoCredits">#CUOREDINAPOLI è un progetto del corso di Nuove Tecnologie dell\'Arte dell\'Accademia di Belle Arti di Napoli.\n\n
+        È svolto in collaborazione con l\'Assessorato alla Cultura e al Turismo del Comune di Napoli, la Municipalità 2 del Comune di Napoli e numerose associazioni e privati che agiscono costantemente sul territorio.</string>
 </resources>

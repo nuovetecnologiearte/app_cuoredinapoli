@@ -12,9 +12,10 @@
 
 
         <TextView
-            android:id="@+id/titAr"
+            android:id="@+id/titCredits"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textAllCaps="true"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="@dimen/standardBorderMargin"
@@ -23,61 +24,93 @@
             android:layout_marginEnd="@dimen/standardBorderMargin"
             android:layout_marginRight="@dimen/standardBorderMargin"
             android:padding="@dimen/standardPadding"
-            android:text="@string/title_Ar"
+            android:text="@string/title_Credits"
             android:textAlignment="center"
             android:textColor="@android:color/white"
             android:textSize="@dimen/titolo"
-            android:textStyle="bold"
-            android:textAllCaps="true"
-            />
+            android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/infoAr"
+            android:id="@+id/infoCredits"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/titAr"
+            android:layout_below="@+id/titCredits"
             android:layout_marginStart="@dimen/standardBorderMargin"
             android:layout_marginLeft="@dimen/standardBorderMargin"
             android:layout_marginTop="@dimen/topMargin"
             android:layout_marginEnd="@dimen/standardBorderMargin"
             android:layout_marginRight="@dimen/standardBorderMargin"
             android:padding="@dimen/standardPadding"
-            android:text="@string/infoAr"
+            android:text="@string/infoCredits"
             android:textAlignment="center"
 
             android:textColor="@android:color/white" />
 
-        <Button
-            android:id="@+id/button"
+
+        <TextView
+            android:textAllCaps="true"
+            android:id="@+id/titContatti"
+            android:textColor="@android:color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/infoAr"
-            android:textAllCaps="true"
+            android:layout_below="@+id/infoCredits"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="@dimen/standardBorderMargin"
             android:layout_marginLeft="@dimen/standardBorderMargin"
             android:layout_marginTop="@dimen/topMargin"
             android:layout_marginEnd="@dimen/standardBorderMargin"
             android:layout_marginRight="@dimen/standardBorderMargin"
-            android:background="@drawable/button_border"
-            android:onClick="startAr"
             android:padding="@dimen/standardPadding"
-            android:text="@string/buttonAR" />
+            android:text="@string/title_contatti"
+            android:textSize="@dimen/titolo"
+            android:textStyle="bold"
+            android:textAlignment="center" />
 
         <TextView
-            android:id="@+id/infoAr2"
+            android:id="@+id/contatti"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/button"
+            android:layout_below="@+id/titContatti"
+            android:layout_centerHorizontal="true"
             android:layout_marginStart="@dimen/standardBorderMargin"
             android:layout_marginLeft="@dimen/standardBorderMargin"
             android:layout_marginTop="@dimen/topMargin"
             android:layout_marginEnd="@dimen/standardBorderMargin"
             android:layout_marginRight="@dimen/standardBorderMargin"
             android:padding="@dimen/standardPadding"
-            android:text="@string/infoAr2"
+            android:text="@string/contattiText"
             android:textAlignment="center"
-
             android:textColor="@android:color/white" />
+
+        <ImageButton
+            android:id="@+id/fb"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/contatti"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="102dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="60dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/fb"
+
+            android:onClick="openFb"
+            android:scaleType="fitStart"
+            android:src="@mipmap/ic_facebook_foreground" />
+
+        <ImageButton
+            android:id="@+id/ig"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/contatti"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="@dimen/borderDistance"
+            android:layout_marginBottom="60dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/ig"
+            android:onClick="openIg"
+            android:scaleType="fitStart"
+            android:src="@mipmap/ic_instagram_foreground" />
     </RelativeLayout>
 </ScrollView>
