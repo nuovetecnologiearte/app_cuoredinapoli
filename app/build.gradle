@@ -6,8 +6,8 @@ android {
         applicationId "net.cuoredinapoli.battito.cuoredinapoli"
         minSdkVersion 16
         targetSdkVersion 28
-        versionCode 10
-        versionName "2.8a"
+        versionCode 11
+        versionName "2.9a"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
