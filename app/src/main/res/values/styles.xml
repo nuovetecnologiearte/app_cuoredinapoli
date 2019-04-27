@@ -17,9 +17,8 @@
 
         <item name="selectableItemBackground">?android:selectableItemBackground</item>
         <item name="selectableItemBackgroundBorderless">?android:selectableItemBackground</item>
-       
-    </style>
 
+    </style>
     <style name="ToolbarItemTheme" parent="@style/ThemeOverlay.AppCompat.Light">
 <item name="android:background">@color/colorPrimaryDark</item>
         <item name="actionMenuTextColor">@color/colorAccent</item>
