@@ -36,4 +36,15 @@ Ed è \"Una rivoluzionaria presa di coscienza\" il punto di partenza e di arrivo
     <string name="title_Credits">Credits</string>
     <string name="infoCredits">#CUOREDINAPOLI è un progetto del corso di Nuove Tecnologie dell\'Arte dell\'Accademia di Belle Arti di Napoli.\n\n
         È svolto in collaborazione con l\'Assessorato alla Cultura e al Turismo del Comune di Napoli, la Municipalità 2 del Comune di Napoli e numerose associazioni e privati che agiscono costantemente sul territorio.</string>
+    <string name="dueporte">ZONA DUE PORTE A TOLEDO</string>
+    <string name="vico_lungo_teatro_nuovo">Vico Lungo Teatro Nuovo</string>
+    <string name="vico_lungo_teatro_nuovo_programma">CAMMAROTA\n70 spritz e patatine in omaggio\n\nPISADOG\nLimoncello in omaggio\n\nTRATTORIA DA NENNELLA\nPasta e patate in omaggio (ore 16)\n\nCOCCOLE\nOfferte sulla merce</string>
+    <string name="via_speranzella">Via Speranzella</string>
+    <string name="viaSperanzellaProgramma">MACELLERIA CARNI SCELTE\nBuffet per i clienti (ore 17)\n\nPASTICCERIA FIORE\nDegustazione \'Via col vento\' (ore 17:30/18:00)\n\nFARMACIA ROMANO\nProdotti Rughe: crema corpo a 3,99€; shampoo anticaduta 9,90€; crema viso 3,99€; maschera argilla 5,99€; scrub viso 5,99€; compresse anticaduta 19,90€; / Linea Vichy sconto del 50%</string>
+    <string name="vicoLungoGelso">Vico Lungo Gelso</string>
+    <string name="vicoLungoGelsoProgramma">
+        \'A PIGNATA\nMenù #CUOREDINAPOLI\n\nTUTTO MILLE e CONSIGLIO\nDegustazione di una torta\n\nTINA E ANGELO\nDegustazione di tre primi (pasta e patate, penne all'arrabbiata, pasta con fagioli e cozze) (ore 20)\n\nBARBIERE\nBuffet (ore 17)\n\nOROLOGERIA\nSconto del 20% su argenteria e orologeria (tutta la giornata)\n\nFRATELLI COZZOLINO\nporzione di patatine e vino ad €1</string>
+    <string name="TitoloSperanzella">ZONA SPERANZELLA</string>
+    <string name="titoloConcordia">ZONA CONCORDIA</string>
+    <string name="tavolata">Dalle ore 17 -  tavolata con:</string>
 </resources>

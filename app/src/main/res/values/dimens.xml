@@ -7,4 +7,5 @@
     <dimen name="topMargin">20dp</dimen>
     <dimen name="standardBorderMargin">8dp</dimen>
     <dimen name="titolo">22sp</dimen>
+    <dimen name="topMarginInside">10dp</dimen>
 </resources>

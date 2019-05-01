@@ -15,7 +15,6 @@
             android:id="@+id/titProgramma"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAllCaps="true"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="@dimen/standardBorderMargin"
@@ -26,12 +25,14 @@
             android:padding="@dimen/standardPadding"
             android:text="@string/title_Programma"
             android:textAlignment="center"
+            android:textAllCaps="true"
             android:textColor="@android:color/white"
             android:textSize="@dimen/titolo"
             android:textStyle="bold" />
 
+
         <TextView
-            android:id="@+id/infoAr"
+            android:id="@+id/titoloConcordia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/titProgramma"
@@ -41,9 +42,755 @@
             android:layout_marginEnd="@dimen/standardBorderMargin"
             android:layout_marginRight="@dimen/standardBorderMargin"
             android:padding="@dimen/standardPadding"
-            android:text="@string/infoProgramma"
+            android:text="@string/titoloConcordia"
             android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-            android:textColor="@android:color/white" />
+        <TextView
+            android:id="@+id/tavolata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titoloConcordia"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/tavolata"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tavolataProgramma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tavolata"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/tavolataProgramma"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/titoloDueporte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tavolataProgramma"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMargin"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/dueporte"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vicoLungoTeatroNuovo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titoloDueporte"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/vico_lungo_teatro_nuovo"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vicoLungoProgramma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vicoLungoTeatroNuovo"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/vico_lungo_teatro_nuovo_programma"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/viaSperanzella"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vicoLungoProgramma"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/via_speranzella"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vicoSperanzellaProgramma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viaSperanzella"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/viaSperanzellaProgramma"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/vicoLungoGelso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vicoSperanzellaProgramma"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/vicoLungoGelso"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vicoLungoGelsoProgramma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vicoLungoGelso"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/vicoLungoGelsoProgramma"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/viaSMariaDelleGrazie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vicoLungoGelsoProgramma"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/viaSMariaDelleGrazie"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viaSMariaDelleGrazieProgramma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viaSMariaDelleGrazie"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/viaSMariaDelleGrazieProgramma"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/viaMontecalvario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viaSMariaDelleGrazieProgramma"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/viaMontecalvario"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viaMontecalvariorogramma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viaMontecalvario"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/viaMontecalvarioProgramma"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/vicoDuePorte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viaMontecalvariorogramma"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/vicoDuePorte"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vicoDuePorteProgramma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vicoDuePorte"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/vicoDuePorteProgramma"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/vicoTeatroNuovo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vicoDuePorteProgramma"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/vicoTeatroNuovo"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vicoTeatroNuovoProgramma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vicoTeatroNuovo"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/vicoTeatroNuovoProgramma"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/viaFigurella"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vicoTeatroNuovoProgramma"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/viaFigurella"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viaFigurellaProgramma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viaFigurella"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/viaFigurellaProgramma"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/viaPortacarrese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viaFigurellaProgramma"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/viaPortacarrese"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viaPortacarreseProgramma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viaPortacarrese"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/viaPortacarreseProgramma"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/viaSSepolcro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viaPortacarreseProgramma"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/viaSSepolcro"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viaSSepolcroProgramma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viaSSepolcro"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/viaSSepolcroProgramma"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/viaConcezione"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viaSSepolcroProgramma"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/viaConcezione"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viaConcezioneProgramma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viaConcezione"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/viaConcezioneProgramma"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/titoloSperanzella"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viaConcezioneProgramma"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMargin"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/TitoloSperanzella"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viaSperanzella2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titoloSperanzella"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/viaSperanzella2"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viaSperanzella2Programma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viaSperanzella2"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/viaSperanzella2programma"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/vicoLungoGelso2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viaSperanzella2Programma"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/vicoLungoGelso2"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vicoLungoGelso2Programma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vicoLungoGelso2"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/vicoLungoGelso2programma"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/vicoTreRe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vicoLungoGelso2Programma"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/vicoTreRe"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vicoTreReProgramma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vicoTreRe"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/vicoTreReprogramma"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/vicoTofa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vicoTreReProgramma"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/vicoTofa"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vicoTofaProgramma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vicoTofa"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/vicoTofaProgramma"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/vicoTrinitaSpagnoli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vicoTofaProgramma"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/vicoTrinitaSpagnoli"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vicoTrinitaSpagnoliProgramma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vicoTrinitaSpagnoli"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/vicoTrinitaSpagnoliProgramma"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/vicoDafflitto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vicoTrinitaSpagnoliProgramma"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/vicoDafflitto"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vicoDafflittoProgramma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vicoDafflitto"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/vicoDafflittoProgramma"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/titoloDeDeo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vicoDafflittoProgramma"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMargin"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/titoloDeDeo"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viaDeDeo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titoloDeDeo"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/viaDeDeo"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viaDeDeoProgramma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viaDeDeo"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/viaDeDeoProgramma"
+            android:textSize="18sp" />
+
+
+
+
+        <TextView
+            android:id="@+id/titoloMontecalvario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viaDeDeoProgramma"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMargin"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/titoloMontecalvario"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/foqus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titoloMontecalvario"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/foqus"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/foqusProgramma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/foqus"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/foqusProgramma"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/concordia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/foqusProgramma"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/concordia"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/concordiaProgramma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/concordia"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/concordiaProgramma"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/vicoLungoMontecalvario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/concordiaProgramma"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/vicoLungoMontecalvario"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vicoLungoMontecalvarioProgramma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vicoLungoMontecalvario"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/vicoLungoMontecalvarioProgramma"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/piazzaMontecalvario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vicoLungoMontecalvarioProgramma"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/piazzaMontecalvario"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/piazzaMontecalvarioProgramma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/piazzaMontecalvario"
+            android:layout_marginStart="@dimen/standardBorderMargin"
+            android:layout_marginLeft="@dimen/standardBorderMargin"
+            android:layout_marginTop="@dimen/topMarginInside"
+            android:layout_marginEnd="@dimen/standardBorderMargin"
+            android:layout_marginRight="@dimen/standardBorderMargin"
+            android:padding="@dimen/standardPadding"
+            android:text="@string/piazzaMontecalvarioProgramma"
+            android:textSize="18sp" />
+
     </RelativeLayout>
 </ScrollView>
