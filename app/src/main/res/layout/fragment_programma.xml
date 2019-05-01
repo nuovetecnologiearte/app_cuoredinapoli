@@ -656,8 +656,6 @@
             android:textSize="18sp" />
 
 
-
-
         <TextView
             android:id="@+id/titoloMontecalvario"
             android:layout_width="wrap_content"
