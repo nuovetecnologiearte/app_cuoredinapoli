@@ -81,10 +81,5 @@
 
             android:textColor="@android:color/white" />
 
-        <ImageView
-            android:id="@+id/imApp1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@mipmap/im_app_1_foreground" />
     </RelativeLayout>
 </ScrollView>
