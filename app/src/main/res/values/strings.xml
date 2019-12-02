@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CUOREDINAPOLI</string>
+    <string name="title_battito">Battito</string>
+    <string name="title_progetti">Progetti</string>
+    <string name="title_flusso">Flusso</string>
+    <string name="title_concept">Concept</string>
+    <string name="title_opzioni">Opzioni </string>
+</resources>
