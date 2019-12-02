@@ -32,7 +32,7 @@ public class FlussoFragment extends Fragment {
         myWebViewinsta = root.findViewById(R.id.cuoreinsta);
         WebSettings webSettings = myWebViewinsta.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        myWebViewinsta.loadUrl("https://cuoredinapoli.net/cdn/solocuore.html");
+        myWebViewinsta.loadUrl("https://cuoredinapoli.net/cdn/solocuore_app.html");
 
         return root;
     }
