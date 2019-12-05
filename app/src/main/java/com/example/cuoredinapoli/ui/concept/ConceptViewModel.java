@@ -10,7 +10,7 @@ public class ConceptViewModel extends ViewModel {
 
     public ConceptViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("CCA c'essa sta a sezione concept");
+        mText.setValue("");
     }
 
     public LiveData<String> getText() {

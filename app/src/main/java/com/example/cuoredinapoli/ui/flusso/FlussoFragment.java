@@ -1,11 +1,15 @@
 package com.example.cuoredinapoli.ui.flusso;
 
+import android.content.ActivityNotFoundException;
+import android.content.ComponentName;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -34,6 +38,23 @@ public class FlussoFragment extends Fragment {
         webSettings.setJavaScriptEnabled(true);
         myWebViewinsta.loadUrl("https://cuoredinapoli.net/cdn/solocuore_app.html");
 
+        Button shareInstagram = root.findViewById(R.id.shareInstagram);
+        shareInstagram.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent launchIntent = getActivity().getPackageManager().getLaunchIntentForPackage("com.instagram.android");
+                if (launchIntent != null)
+                {
+                    try
+                    {
+                        startActivity(launchIntent);
+                    }
+                    catch (ActivityNotFoundException ex) // in case Instagram not installed in your device
+                    {
+                        ex.printStackTrace();
+                    }
+                }
+            }
+        });
         return root;
     }
 }
