@@ -1,105 +1,14 @@
 <resources>
-    <string name="app_name">#CUOREDINAPOLI</string>
-    <string name="title_home">Home</string>
-    <string name="title_info">Info</string>
-    <string name="title_contatti">Contatti</string>
-    <string name="cuore_loader">loaderCuore</string>
-    <string name="infoText">
-                \"Rivoluzionaria\" è un\'intuizione, una consapevolezza che è capace di sovvertire direzioni, modi di pensare, azioni e relazioni. Un piccolo gesto può diventare un esempio seguito da molti e stravolgere positivamente
-        l\'intera dinamica di un territorio: la rivoluzione inizia da qui, da te, con gesti quotidiani di amore per il territorio comune.\n\n
-\"Rivoluzionaria\" è la consapevolezza di essere donne e uomini che attraversano relazioni, città, strade, storie e che sanno di essere parte di un flusso, i cui elementi si influenzano reciprocamente.\n\n
-\"Rivoluzionaria\" è la consapevolezza che ogni cosa esiste in relazione l\'una con l\'altra e in relazione a te che puoi influenzare e cambiare queste dinamiche.\n\n
-Ed è \"Una rivoluzionaria presa di coscienza\" il punto di partenza e di arrivo di #CUOREDINAPOLI.\n\n
-    </string>
-    <string name="logo_cuoredinapoli">Logo Cuoredinapoli</string>
-    <string name="contattiText">Puoi contattarci all\'indirizzo email \n info.cuoredinapoli@gmail.com</string>
-    <string name="fb">Facebook</string>
-    <string name="ig">Instagram</string>
-    <string name="title_ar">AR</string>
-    <string name="infoAr">Con la Realtà Aumentata puoi ottenere nuove informazioni su ciò che ti circonda e scoprire aspetti nascosti della realtà.
-    Inquadra il segno #CUOREDINAPOLI o le varie zone dei Quartieri Spagnoli sulla mappa.</string>
-    <string name="buttonAR">Lancia la Realtà Aumentata</string>
-    <string name="mi_programma">Programma</string>
-    <string name="title_concept">Il Concept</string>
-    <string name="title_Ar">Realtà Aumentata</string>
-    <string name="title_Programma">Il Programma del 4 Maggio</string>
-    <string name="infoProgramma">Lorem</string>
-    <string name="infoAr2">Per poter utilizzare la funzionalità della Realtà Aumentata, il tuo dispositivo deve
-    essere compatibile\ncon Google ARCore.</string>
-    <string name="mi_partecipanti">Partecipanti</string>
-    <string name="mi_credits">Credits</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_Partecipanti">Chi Partecipa</string>
-    <string name="infoPartecipanti">Lorem</string>
-    <string name="title_Credits">Credits</string>
-    <string name="infoCredits">#CUOREDINAPOLI è un progetto del corso di Nuove Tecnologie dell\'Arte dell\'Accademia di Belle Arti di Napoli.\n\n
-        È svolto in collaborazione con l\'Assessorato alla Cultura e al Turismo del Comune di Napoli, la Municipalità 2 del Comune di Napoli e numerose associazioni e privati che agiscono costantemente sul territorio.</string>
-    <string name="dueporte">ZONA DUE PORTE A TOLEDO</string>
-    <string name="vico_lungo_teatro_nuovo">Vico Lungo Teatro Nuovo</string>
-    <string name="vico_lungo_teatro_nuovo_programma">CAMMAROTA\n70 spritz e patatine in omaggio\n\nPISADOG\nLimoncello in omaggio\n\nTRATTORIA DA NENNELLA\nPasta e patate in omaggio (ore 16)\n\nCOCCOLE\nOfferte sulla merce</string>
-    <string name="via_speranzella">Via Speranzella</string>
-    <string name="viaSperanzellaProgramma">MACELLERIA CARNI SCELTE\nBuffet per i clienti (ore 17)\n\nPASTICCERIA FIORE\nDegustazione \'Via col vento\' (ore 17:30/18:00)\n\nFARMACIA ROMANO\nProdotti Rughe: crema corpo a 3,99€; shampoo anticaduta 9,90€; crema viso 3,99€; maschera argilla 5,99€; scrub viso 5,99€; compresse anticaduta 19,90€; / Linea Vichy sconto del 50%</string>
-    <string name="vicoLungoGelso">Vico Lungo Gelso</string>
-    <string name="vicoLungoGelsoProgramma">
-        \'A PIGNATA\nMenù #CUOREDINAPOLI\n\nTUTTO MILLE e CONSIGLIO\nDegustazione di una torta\n\nTINA E ANGELO\nDegustazione di tre primi (pasta e patate, penne all\'arrabbiata, pasta con fagioli e cozze) (ore 20)\n\nBARBIERE\nBuffet (ore 17)\n\nOROLOGERIA\nSconto del 20% su argenteria e orologeria (tutta la giornata)\n\nFRATELLI COZZOLINO\nporzione di patatine e vino ad €1</string>
-    <string name="TitoloSperanzella">ZONA SPERANZELLA</string>
-    <string name="titoloConcordia">ZONA CONCORDIA</string>
-    <string name="tavolata">Dalle ore 17 -  tavolata con:</string>
-    <string name="tavolataProgramma">FORNO MONTECALVARIO\nPane #CUOREDINAPOLI\n\nLABORATORIO ENZO ZAZZARO\nDegustazioni di parigine e pizzette\n\nDON CAFÈ\nSfogliatella in omaggio con l’acquisto di un caffè\n\nLAVANDERIA IL BENESSERE DEI TUOI CAPI\nDegustazione\n\nPIZZERIA COR\'E NAPULE\nAssaggio di pasta</string>
-    <string name="piazzaMontecalvario">Piazza Montecalvario</string>
-    <string name="piazzaMontecalvarioProgramma">BAR #CUOREDINAPOLI\n50 spritz in omaggio</string>
-    <string name="vicoLungoMontecalvario">Vico Lungo Montecalvario</string>
-    <string name="vicoLungoMontecalvarioProgramma">PANETTIERE\nPane #CUOREDINAPOLI</string>
-    <string name="concordia">Via Concordia</string>
-    <string name="concordiaProgramma">LA DOLCE SOSTA\nAperitivo #CUOREDINAPOLI\n\nPANETTIERE FRANCESCO\nPane #CUOREDINAPOLI</string>
-    <string name="titoloMontecalvario">ZONA MONTECALVARIO</string>
-    <string name="foqus">Foqus</string>
-    <string name="viaDeDeo">Via De Deo</string>
-    <string name="titoloDeDeo">ZONA DE DEO</string>
-    <string name="vicoDafflitto">Vico D\'Afflitto</string>
-    <string name="vicoTrinitaSpagnoli">Vico Trinità degli Spagnoli</string>
-    <string name="vicoTofa">Vico Tofa</string>
-    <string name="vicoTreRe">Vico Tre Re a Toledo</string>
-    <string name="vicoLungoGelso2">Vico Lungo del Gelso</string>
-    <string name="viaSperanzella2">Via Speranzella</string>
-    <string name="viaConcezione">Via Concezione a Montecalvario</string>
-    <string name="viaSSepolcro">Vico San Sepolcro</string>
-    <string name="viaPortacarrese">Via Portacarrese a Montecalvario</string>
-    <string name="viaFigurella">Via Figurella a Montecalvario</string>
-    <string name="vicoTeatroNuovo">Vico Teatro Nuovo</string>
-    <string name="vicoDuePorte">Vico Due Porte a Toledo</string>
-    <string name="viaMontecalvario">Via Montecalvario</string>
-    <string name="viaSMariaDelleGrazie">Via Santa Maria delle Grazie Toledo</string>
-    <string name="viaSMariaDelleGrazieProgramma">SARTULELLE\nDegustazione babà rustico (ore 17.30)\n\nTRATTORIA \'DA CONCETTA\'\nDegustazione di fritture e stuzzichini\n\nTRATTORIA QUARTIERI SPAGNOLI\nDegustazione di zeppoline rosse (ore 17)\n\nVOLO FIORI\nFiori in regalo (ore 17)
-</string>
-    <string name="viaMontecalvarioProgramma">BAR DONATO\nDegustazione di bibite (roba da bere) (ore 19)\n\nVIVERE A COLORI\nAperitivo (ore 18.30)</string>
-    <string name="vicoDuePorteProgramma">STÀ BEN\nDegustazione 80 bicchieri di Sangria (ore 18)\n\nSASI PARRUCCHIERE\nAperitivo con musica\n\nSORELLE TALARICO\nAperitivo con musica\n\nTABACCHI\nAperitivo (ore 18.30)</string>
-    <string name="vicoTeatroNuovoProgramma">TRATTORIA TOLEDO\nMeloncello/Limoncello in offerta (ore 17)</string>
-    <string name="viaFigurellaProgramma">ZIO ENZO\nDegustazione di vino (ore 17.30)</string>
-    <string name="viaPortacarreseProgramma">DI GIÒ\nBrindisi (ore 17)\n\nBARBER OLD SCHOOL\nBrindisi (ore 18)\n\nESTETISTA NILÙ\nBiscotti/cose da mangiare  (dalle ore 18.30)\n\nBAR GIOVANNONE\nCaffé a €0,50 (dalle ore 12)\n\nBARBIERE\nShampoo e taglio €10</string>
-    <string name="viaSSepolcroProgramma">TRATTORIA \'A FIGLIA D\'À MARUZZARA\nOffre limoncello (tutto il giorno)\n\nPARRUCCHIERE \nDegustazione di dolci (ore 18)</string>
-    <string name="viaConcezioneProgramma">PLANET WIN 365\nOfferta sul caffè\n\nPIZZERIA RAPUANO\nPizza #CUOREDINAPOLI</string>
-    <string name="viaSperanzella2programma">CASA DANIELE\nTavolino con biscotti (ore 17.30)\n\nGDL\nStand rosso #CUOREDINAPOLI\n\nINTIMO BARBY\nStand rosso #CUOREDINAPOLI\n\nEDICOLA ROMA\nTavolo con dolcetti (ore 18)\n\nMACELLERIA PIPOLO\nOffre polpette fritte (dalle ore 18)\n\nELETTRICITÀ\nBrindisi con prosecco (ore 18.30)\n\nTRATTORIA SPERANZELLA\nPrimo #CUOREDINAPOLI\n\nDOLCE PALATO\nRustici assortiti (dalle ore 17)\n\nDA MIMÌ\nAssaggi di pizza #CUOREDINAPOLI (dalle ore 19)\n\nDIAMOND CHIC\nVetrina rosso #CUOREDINAPOLI\n\nO VESUVIO\nNAPOLI (Bruschette, mozzarella di bufala, fritto Italia e primo a scelta tra mare e terra € 15 a persona) \n\nGINGER TETI\nPanino #CUOREDINAPOLI\n\nIDENTITY PARRUCCHIERE\nOffre spritz #CUOREDINAPOLI (ore 19.30)\n\nGRAZIA ARTICOLI PER LA CASA\nSconto a sorpresa #CUOREDINAPOLI\n\nSABATINO\nOmaggio bottiglietta d\'acqua\n\nTRATTORIA ANTICA CAPRI\nMenù #CUOREDINAPOLI €25 a persona\n\nNINNONE TRATTORIA\nMenù #CUOREDINAPOLI (dall\'antipasto al dolce) di terra €20 a persona o di mare €25 a persona. Tutto fresco!\n\nCARNI ELITE\nFrancesine farcite #CUOREDINAPOLI\n\nADDO \'O 52\nPizza e bibita €5 \n\nFRUTTIVENDOLO\nSpremute d\'arancia fresche (ore 18.30)\n\nTELEPHONE\'S PLANET\nSconto variabile su tutta la merce\n\nSUNDAY ESTETISTA\nSmalto rosso #CUOREDINAPOLI a €2</string>
-    <string name="vicoLungoGelso2programma">LOCANDA DEI BORBONI\nGnocchi #CUOREDINAPOLI (dalle ore 18.30)\n\nPARRUCCHIERE MAIORANO\nBrindisi (dalle ore 19)\n\nTRATTORIA DA PEPPINO\nAperitivo #CUOREDINAPOLI (dalle ore 20)\n\nPARLUX\nTrattamento curativo in omaggio\n\nTRATTORIA ANNARÈ\nSul totale il 30% di sconto\n\nVALÙ con HOSTERIA TOLEDO\nOffre assaggio di risotto #CUOREDINAPOLI (dalle ore 18)\n\nMARE BLU\nAperitivo con coppette alle olive a €1 (ore 18.30)\n\nO\' VASCIO\nOffre assaggio di pasta e patate e dj set (dalle ore 17.30 alle ore 19.30)\n\nALI PAK FOOD\nOffre aperitivo #CUOREDINAPOLI (dalle ore 18)\n\nKBIRR\nDegustazione birra</string>
-    <string name="vicoTreReprogramma">PIZZAIOLI VERACI\n10% di sconto a chi si presenta con la mappa #CUOREDINAPOLI\n\nPIZZERIA 7 SOLDI\nPasta con ragù napoletano e polpettine (ore 17.30)</string>
-    <string name="vicoTofaProgramma">ELA GLAMOUR e PROSHOP\nLecca lecca #CUOREDINAPOLI (ore 17)\n\nMERCERIA AGO E FILO E MOLTO DI PIÙ\nSconto sui capi selezionati</string>
-    <string name="vicoTrinitaSpagnoliProgramma">VICO TRINITÀ DEGLI SPAGNOLIIL GRILLO ENOTECA\nBrindisi (ore 19.30)\n\nL\'ANGOLO D\'ORO\nBrindisi (ore 19.30)</string>
-    <string name="vicoDafflittoProgramma">ANNIE CALZATURE, YOUR PARTY e OTTICA DE VINCENZO\nOffre aperitivo (ore 18.30)\n\nOTTICA DE VINCENZO\nSconto del 25% per tutti i clienti #CUOREDINAPOLI \n\nYOUR PARTY\nColonna di palloncini #CUOREDINAPOLI\n\nMONDO SERVIZI e DOLCI MOMENTI\nOffre aperitivo con musica (ore 18)\n\nPANIFICIO RESCIGNO, TABACCHI e LA BOUTIQUE DEL PARRUCCHIERE\nOffre aperitivo (ore 18)\n\nZIO RICH\nOffre bicchierini con granita di limone (dalle ore 18 alle ore 19)</string>
-    <string name="viaDeDeoProgramma">ALIMENTARI SALVATORE\nOffre casatiello\n\nUNDER STORE\nOffre aperitivo\n\nBAR DE DEO\nAperitivo con spritz a €1 e piano bar DJ Ciro\n\nTUTTO MILLE\nOffre aperitivo\n\nPUNTO 93\nOffre aperitivo\n\nCASA DANIELE\nOffre torta\n\nBAR ALOIA\nBirra alla spina €1\n\nFRUTTA E VERDURA COZZOLINO\nPatatine fritte + bicchiere di vino €1\n\nALIMENTARI NUNZIA\n3 taralli + bicchiere di bitter €1\n\nGENNI OTTICA\nOffre torta + spumante \n\nINDIANO ALIMENTARI\nOffre bevande\n\nEURO 2\nOffre bevande\n\nPOLLERIA DA ROSARIO\nOffre porzione di patate\n\nPOLLERIA DA PASQUALE\nOffre bevande\n\nCICCIO FRI\nOffre pizza + sconto: pizza fritta €3 \n\nPANETTERIA\nOffre cuoricini di pane\n\n#SM#\nOffre aperitivo\n\nNUMBER ONE\nOffre aperitivo\n\nCRISTAL STYLE\n Offre aperitivo\n\nG POINT\nOffre aperitivo + sconto: pellicola e cover €5\n\nMINIMARKET ENZO, PARRUCCHIERE ENZO, TABACCHERIA E LOTTO, FRUTTIVENDOLO FONCILLO e MACELLERIA SMIMMO\nAperitivo + Dj set: Fabrizio Zollo “Tech House”\n\n ADDU BARBANERA, ABC e BEAUTY TIME\nAperitivo di dolci\n\nCOLOMBO MINIMARKET\nOffre bevande\n\nALIMENTARI MEDICI\nPanino con mortadella €1\n\nTABACCHERIA IL TEMPIO DELLA FORTUNA\nOffre brindisi (ore 19)\n\nEFFETTOMASSIMO\nOffre aperitivo</string>
-    <string name="foqusProgramma">MOCAMBO\nSangria €1\n\n\'A FIGLIA D\' \'O MARENARO\nBrindisi (ore 18.30)\n\nPASTICCERIA NAPOLITANO\nDegustazione dolci\n\nTARALLERIA NAPOLETANA DI LEOPOLDO INFANTE\nTaralli #CUOREDINAPOLI\n\nPASSIONE DI SOFÌ\nDegustazione cuoppi\n\nPASTICCERIA POPPELLA\nTorta #CUOREDINAPOLI</string>
-    <string name="titoloMusicisti">I Musicisti</string>
-    <string name="musicisti">ORCHESTRA SINFONICA DEI QUARTIERI SPAGNOLI \nPiazza Montecalvario (ore 17)\n\nANDREA ANONIMO \nVico Lungo del Gelso (ore 17)\n\nHANDS DUO\nVia Montecalvario (ore 17)\n\nISMAILA NIANG\nVico Lungo del Gelso (ore 17)\n\nMEA FUX\nVia De Deo (ore 17)\n\nEDOARDO SCUOTTO\nVia De Deo (ore 17) \n\nANTONIO ONORATO\nGIANFRANCO MATARAZZO\nPIPPO NOVIELLO\nVico Due Porte a Toledo (ore 17)\n\nBARABBA\nVico Lungo del Gelso (ore 18)\n\nDANIELE CAPPELLO\nVia Montecalvario (ore 18)\n\nSOUL PALCO\nVico Lungo del Gelso (ore 19)\n \nLAUTARU\nVico Lungo Trinità degli Spagnoli  (ore 19)\n\nCAPOEIRA MAO ABERTA\nLargo Baracche (ore 18.30)\n\nFRANK AMOR\nVia Montecalvario (ore 19)\n\nCAPOEIRA A CURA DEL MAESTRO FLAVIO DA FONTOURA CABRAL \nFoqus (ore 19)\n\nDOLORES MELODIA\nVico Lungo del Gelso (ore 19.30)\n\nRETE CO\'MAR\nLargo Baracche (ore 19.30)\n\nLORENZO GIROTTI \nVico Lungo del Gelso (ore 20)\n\nPINO RUFFO\nItinerante nei vari esercizi commerciali</string>
-    <string name="titoloBande">Le Bande Itineranti</string>
-    <string name="bande">BATERIA PEGAONDA\nStart da Foqus ore 17\n\nSCALZABANDA\nStart da Largo Baracche ore 17.30\n\nBLUE GOSPEL SINGERS\nStart da Vico Tofa ore 18\n\nQUEBRADEIRA INDEPENDENTE \nStart da Foqus ore 20\n\nNAPULITANATA\nItineranti nei vari esercizi commerciali\n\nVANDALIA\nItineranti nei vari esercizi commerciali</string>
-    <string name="titoloEsibizioni">Esibizioni</string>
-    <string name="esibizioni">COMPAGNIA DEI SALTIMBANCHI\nSpettacolo circense\n\Piazza Montecalvario ore 17\n\nMARIA LUISA\nSpettacolo con hula hoop\nLargo Baracche ore 17\n\nARGONAUTI\nEsibizione teatrale\nPiazzetta della chiesa della Santissima Trinità degli Spagnoli ore 17.30\n\nFAMILY DANCING\nFoqus ore 17.30\n\nNEW GENERATION SENEGAL\nLargo Baracche ore 17\nPiazza Montecalvario ore 18.30</string>
-    <string name="titoloRadio">Le Radio</string>
-    <string name="radio">RADIO OTM\nVia De Deo\n\nRADIO PUNTO ZERO\nLargo Baracche</string>
-    <string name="titoloAssociazioni">Le Associazioni</string>
-    <string name="associazioni">NOUS NGO\nIl Cuore Giovane d’Europa</string>
-    <string name="titoloTour">I Tour nei Quartieri Spagnoli</string>
-    <string name="tour">VASCI TOUR\nRitrovo ore 17 alla stazione metro Toledo\n(Vico Due Porte a Toledo, Via Speranzella, Vico Lungo del Gelso, Murale di Maradona e Largo Baracche)\n\nVICOLI IN CORSO di CASA TOLENTINO\nRitrovo ore 17 su Corso Vittorio Emanuele\nTour gratuito - max 30 persone\n(Solo su prenotazione - contattare Casa Tolentino)</string>
-
+    <string name="app_name">CUOREDINAPOLI</string>
+    <string name="title_battito">Battito</string>
+    <string name="title_progetti">Progetti</string>
+    <string name="title_flusso">Flusso</string>
+    <string name="title_concept">Concept</string>
+    <string name="title_opzioni">Opzioni </string>
+    <string name="citybrand_uno">#CUOREDINAPOLI è un contenitore di signiﬁcati eterogenei, strettamente connessi all’esperienza della relazione, ed è una piattaforma di condivisione e di comunicazione che produce uno scambio di esperienze e di energie in grado di modiﬁcare l’animo e il sentire dei soggetti coinvolti.</string>
+    <string name="citybrand_due">È il punto di partenza ideale per costruire un percorso di appartenenza comune: #CUOREDINAPOLI è un segno che, utilizzato anche come hashtag, ampliﬁca il senso di riappropriazione del territorio e della città. La forza del segno, diffuso orizzontalmente e dal basso, ha determinato che #CUOREDINAPOLI è diventato nel tempo il vero e proprio city brand,
+        in cui la città si riconosce nei contenuti e nell’immagine visiva. </string>
+    <string name="citybrand_tre">Lo spazio pubblico urbano diventa il luogo in cui realizzare una diffusa scultura antropologica relazionale, che si articola all’interno del percorso cittadino e che vive delle relazioni tra i vari soggetti che contribuiscono costantemente ad alimentarla. Commercianti, associazioni, artisti di strada, musicisti e abitanti dei diversi quartieri di Napoli si adoperano attivamente per realizzare la festa/opera evento conclusiva di un lungo processo artistico.</string>
+    <string name="citybrand_quattro">Diffuso attraverso molteplici linguaggi di comunicazione, il segno #CUOREDINAPOLI si accresce dei contenuti e dei valori identitari del territorio. La festa/opera evento, dunque, è il risultato di un lungo periodo di sperimentazioni artistiche e di lavoro comune, sviluppati dall’azione del Laboratorio Mobile di Sperimentazione del Corso di Nuove Tecnologie dell’Arte dell’Accademia di Belle Arti di Napoli, che, trasferendosi per lunghi periodi nei contesti urbani in cui intende operare, costruisce il processo artistico assieme a chi attraversa e abita quei luoghi cittadini.</string>
+    <string name="citybrand_cinque">La disseminazione del segno avviene attraverso la partecipazione attiva delle persone, consentendo a chiunque di determinare un ﬂusso capace di intercettare le pluralità culturali e di trasformarle in proposte estetiche e creative. L’azione di #CUOREDINAPOLI è mirata infatti al coinvolgimento di tutti i soggetti, necessario per la costruzione di un senso di appartenenza al territorio comune.</string>
 </resources>

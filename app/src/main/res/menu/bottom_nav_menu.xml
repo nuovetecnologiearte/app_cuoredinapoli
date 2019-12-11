@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<!--    <item-->
+    <!--        android:id="@+id/navigation_dashboard"-->
+    <!--        android:icon="@drawable/iconaprogetti"-->
+    <!--        android:title="@string/title_progetti" />-->
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/iconaflusso"
+        android:title="@string/title_flusso" />
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/iconabattito"
+        android:title="@string/title_battito" />
+
+    <item
+        android:id="@+id/navigation_concept"
+        android:icon="@drawable/iconaconcept"
+        android:title="@string/title_concept" />
+
+<!--    <item-->
+<!--        android:id="@+id/navigation_opzioni"-->
+<!--        android:icon="@drawable/iconaopzioni"-->
+<!--        android:title="@string/title_opzioni" />-->
+
+</menu>
