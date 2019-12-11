@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
-                        String msg = "Successfull";
+                        String msg = "Ginevra è grande!";
                         if (!task.isSuccessful()) {
                             msg ="Failed";
                         }
