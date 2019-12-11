@@ -2,10 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
 
-    <item
-        android:id="@+id/navigation_dashboard"
-        android:icon="@drawable/iconaprogetti"
-        android:title="@string/title_progetti" />
+<!--    <item-->
+    <!--        android:id="@+id/navigation_dashboard"-->
+    <!--        android:icon="@drawable/iconaprogetti"-->
+    <!--        android:title="@string/title_progetti" />-->
 
     <item
         android:id="@+id/navigation_notifications"
@@ -22,9 +22,9 @@
         android:icon="@drawable/iconaconcept"
         android:title="@string/title_concept" />
 
-    <item
-        android:id="@+id/navigation_opzioni"
-        android:icon="@drawable/iconaopzioni"
-        android:title="@string/title_opzioni" />
+<!--    <item-->
+<!--        android:id="@+id/navigation_opzioni"-->
+<!--        android:icon="@drawable/iconaopzioni"-->
+<!--        android:title="@string/title_opzioni" />-->
 
 </menu>

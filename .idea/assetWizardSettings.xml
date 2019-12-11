@@ -45,7 +45,7 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="$USER_HOME$/Scrivania/vmbox/cuoreBianco.png" />
+                                      <entry key="imageAsset" value="$PROJECT_DIR$/../Scrivania/vmbox/cuoreBianco.png" />
                                       <entry key="outputName" value="ic_toolbar_logo" />
                                       <entry key="theme" value="HOLO_DARK" />
                                       <entry key="themeColor" value="ffffff" />
@@ -76,6 +76,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
+                                                <entry key="scalingPercent" value="74" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -85,9 +86,12 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="backgroundLayerName" value="ic_launcher_background" />
-                                      <entry key="foregroundImage" value="$USER_HOME$/Scrivania/appalph/3.png" />
-                                      <entry key="outputName" value="im_app_3" />
+                                      <entry key="backgroundAssetType" value="COLOR" />
+                                      <entry key="backgroundColor" value="ffffff" />
+                                      <entry key="foregroundImage" value="$PROJECT_DIR$/../Desktop/appNuova/Grafiche/icona/1x/icon192.png" />
+                                      <entry key="legacyIconShape" value="CIRCLE" />
+                                      <entry key="outputName" value="icon_cuoredinapoli" />
+                                      <entry key="webIconShape" value="CIRCLE" />
                                     </map>
                                   </option>
                                 </PersistentState>

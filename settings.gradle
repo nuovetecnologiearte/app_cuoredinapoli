@@ -1,1 +1,1 @@
-include ':app', ':ar', ':VuforiaWrapper'
+include ':app'
