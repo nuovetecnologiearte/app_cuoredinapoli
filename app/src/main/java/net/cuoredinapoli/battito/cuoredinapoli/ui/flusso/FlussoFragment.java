@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.Button;
 
 import androidx.annotation.NonNull;
@@ -32,6 +33,10 @@ public class FlussoFragment extends Fragment {
         WebSettings webSettings = myWebViewinsta.getSettings();
         webSettings.setJavaScriptEnabled(true);
         myWebViewinsta.loadUrl("https://cuoredinapoli.net/cdn/solocuore_app.html");
+        myWebViewinsta.setWebViewClient(new WebViewClient() {
+            @Override public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
+                myWebViewinsta.loadUrl("file:///android_asset/error_flusso.html");
+            } });
 
         Button shareInstagram = root.findViewById(R.id.shareInstagram);
         shareInstagram.setOnClickListener(new View.OnClickListener() {

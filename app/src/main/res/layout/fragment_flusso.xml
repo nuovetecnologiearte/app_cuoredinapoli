@@ -13,7 +13,7 @@
         android:layout_height="150dp"
         android:fontFamily="@font/montserrat_bold"
         android:gravity="center_vertical"
-        android:text="ENTRA NEL FLUSSO"
+        android:text="@string/title_Entranelflusso"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="#D00C2E"

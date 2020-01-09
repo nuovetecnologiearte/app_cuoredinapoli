@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -18,6 +19,7 @@ public class BattitoFragment extends Fragment {
     private BattitoViewModel battitoViewModel;
 
     public WebView myWebView;
+    public WebView webView;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -29,8 +31,13 @@ public class BattitoFragment extends Fragment {
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         myWebView.loadUrl("http://battito.cuoredinapoli.net");
+        myWebView.setWebViewClient(new WebViewClient() {
+            @Override public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
+                myWebView.loadUrl("file:///android_asset/error.html");
+            } });
 
         return root;
-    }
 
+
+}
 }
