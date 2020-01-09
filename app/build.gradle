@@ -8,8 +8,8 @@ android {
         applicationId "net.cuoredinapoli.battito.cuoredinapoli"
         minSdkVersion 21
         targetSdkVersion 29
-        versionCode 23
-        versionName "dario"
+        versionCode 26
+        versionName "GIAMMY&ALE&MARIA"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
