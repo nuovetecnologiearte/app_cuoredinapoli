@@ -2,8 +2,11 @@ package net.cuoredinapoli.battito.cuoredinapoli;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 
 
 import com.example.cuoredinapoli.R;
@@ -19,6 +22,8 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -57,5 +62,6 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
     }
+
 
 }
