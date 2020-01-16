@@ -14,6 +14,8 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.cuoredinapoli.R;
 
+import java.util.Locale;
+
 public class BattitoFragment extends Fragment {
 
     private BattitoViewModel battitoViewModel;
@@ -30,7 +32,14 @@ public class BattitoFragment extends Fragment {
         myWebView = root.findViewById(R.id.battitoWeb);
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        myWebView.loadUrl("http://battito.cuoredinapoli.net");
+        if  (Locale.getDefault().getLanguage().contentEquals("it")){
+            myWebView.loadUrl("http://battito.cuoredinapoli.net");
+        }
+        else {
+            myWebView.loadUrl("http://battito.cuoredinapoli.net/en.html");
+        }
+
+
         myWebView.setWebViewClient(new WebViewClient() {
             @Override public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
                 myWebView.loadUrl("file:///android_asset/error.html");

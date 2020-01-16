@@ -17,6 +17,8 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.cuoredinapoli.R;
 
+import java.util.Locale;
+
 public class FlussoFragment extends Fragment {
 
     private FlussoViewModel flussoViewModel;
@@ -32,7 +34,14 @@ public class FlussoFragment extends Fragment {
         myWebViewinsta = root.findViewById(R.id.cuoreinsta);
         WebSettings webSettings = myWebViewinsta.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        myWebViewinsta.loadUrl("https://cuoredinapoli.net/cdn/solocuore_app.html");
+
+        if  (Locale.getDefault().getLanguage().contentEquals("it")){
+            myWebViewinsta.loadUrl("https://cuoredinapoli.net/cdn/solocuore_app.html");
+        }
+        else {
+            myWebViewinsta.loadUrl("https://cuoredinapoli.net/cdn/solocuore_app_en.html");
+        }
+
         myWebViewinsta.setWebViewClient(new WebViewClient() {
             @Override public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
                 myWebViewinsta.loadUrl("file:///android_asset/error_flusso.html");
