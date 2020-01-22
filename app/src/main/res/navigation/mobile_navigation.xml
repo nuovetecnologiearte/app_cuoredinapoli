@@ -29,10 +29,12 @@
         android:label="@string/title_concept"
         tools:layout="@layout/fragment_concept" />
 
-    <fragment
+    <!-- <fragment
         android:id="@+id/navigation_opzioni"
         android:name="net.cuoredinapoli.battito.cuoredinapoli.ui.opzioni.OpzioniFragment"
         android:label="@string/title_opzioni"
-        tools:layout="@layout/fragment_opzioni" />
+        tools:layout="@layout/fragment_opzioni" /> -->
+
 
 </navigation>
+

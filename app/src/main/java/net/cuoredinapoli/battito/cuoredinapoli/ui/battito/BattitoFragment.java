@@ -1,9 +1,14 @@
 package net.cuoredinapoli.battito.cuoredinapoli.ui.battito;
 
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebResourceError;
+import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -21,7 +26,6 @@ public class BattitoFragment extends Fragment {
     private BattitoViewModel battitoViewModel;
 
     public WebView myWebView;
-    public WebView webView;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -32,21 +36,47 @@ public class BattitoFragment extends Fragment {
         myWebView = root.findViewById(R.id.battitoWeb);
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        if  (Locale.getDefault().getLanguage().contentEquals("it")){
-            myWebView.loadUrl("http://battito.cuoredinapoli.net");
-        }
-        else {
-            myWebView.loadUrl("http://battito.cuoredinapoli.net/en.html");
-        }
 
 
-        myWebView.setWebViewClient(new WebViewClient() {
-            @Override public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
-                myWebView.loadUrl("file:///android_asset/error.html");
+       /* myWebView.setWebViewClient(new WebViewClient() {
+            public void onReceivedError(WebView webView, WebResourceRequest request, WebResourceError error) {
+                // if (finalCount == 0) {
+                super.onReceivedError(webView, request, error);
+                String errorHtml = "<html><body><h2>找不到网页</h2></body></html>";
+                myWebView.loadDataWithBaseURL(null, errorHtml, "text/html", "UTF-8", null);
+                //}
             } });
+
+*/
+
+
+
+
+         if (isNetworkAvailable()) {
+
+             if (Locale.getDefault().getLanguage().contentEquals("it")) {
+                 myWebView.loadUrl("https://battito.cuoredinapoli.net");
+
+             } else {
+                 myWebView.loadUrl("https://battito.cuoredinapoli.net/en.html");
+
+             }
+
+
+        } else {
+            myWebView.loadUrl("file:///android_asset/error.html");
+        }
+
 
         return root;
 
 
-}
+    }
+
+    private boolean isNetworkAvailable() {
+        ConnectivityManager connectivityManager
+                = (ConnectivityManager) getActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
+    }
 }

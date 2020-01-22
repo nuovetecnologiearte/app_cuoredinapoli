@@ -22,9 +22,9 @@
         android:icon="@drawable/iconaconcept"
         android:title="@string/title_concept" />
 
-<!--    <item-->
-<!--        android:id="@+id/navigation_opzioni"-->
-<!--        android:icon="@drawable/iconaopzioni"-->
-<!--        android:title="@string/title_opzioni" />-->
+   <!-- <item
+        android:id="@+id/navigation_opzioni"
+        android:icon="@drawable/iconaopzioni"
+        android:title="@string/title_opzioni" /> -->
 
 </menu>
