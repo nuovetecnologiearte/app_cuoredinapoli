@@ -1,5 +1,7 @@
 package net.cuoredinapoli.battito.cuoredinapoli.ui.map;
 
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -65,8 +67,12 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
         MapsInitializer.initialize(getContext());
 
         mGoogleMap = googleMap;
+        BitmapDrawable bitmapdraw=(BitmapDrawable)getResources().getDrawable(R.drawable.marker_cuore);
+        Bitmap b=bitmapdraw.getBitmap();
+        Bitmap Marker = Bitmap.createScaledBitmap(b, 84, 144, false);
         googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
-        googleMap.addMarker(new MarkerOptions().position(new LatLng(40.849938,14.259687)).title("Trattoria Don Vincenzo") .snippet("Via S.Biagio dei librai, 60 - Napoli" )); //.icon(BitmapDescriptorFactory.fromResource(R.drawable.iconabattito)));
+        //.icon(BitmapDescriptorFactory.fromBitmap(Marker)
+        googleMap.addMarker(new MarkerOptions().position(new LatLng(40.849938,14.259687)).title("Trattoria Don Vincenzo") .snippet("Via S.Biagio dei librai, 60 - Napoli"));
         googleMap.addMarker(new MarkerOptions().position(new LatLng(40.7875422,14.3736273)).title("Viaggia Quasi Gratis") .snippet("Via Circumvallazione, 163 - Torre del Greco"));
         googleMap.addMarker(new MarkerOptions().position(new LatLng(40.867937,14.268188)).title("I am Caso") .snippet("Via Santi Giovanni e Paolo, 3 - Napoli"));
         googleMap.addMarker(new MarkerOptions().position(new LatLng(40.851687,14.257812)).title("Le Ortensie Guest House") .snippet("Vico Giganti, 20 - Napoli"));
