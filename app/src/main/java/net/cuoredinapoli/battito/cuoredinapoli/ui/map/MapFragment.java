@@ -1,11 +1,14 @@
 package net.cuoredinapoli.battito.cuoredinapoli.ui.map;
 
+import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -22,11 +25,14 @@ import com.google.android.gms.maps.model.BitmapDescriptor;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.SupportMapFragment;
+
+import org.w3c.dom.Text;
 
 
-
-public class MapFragment extends Fragment implements OnMapReadyCallback {
+public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleMap.OnInfoWindowClickListener {
 
     GoogleMap mGoogleMap;
     MapView mMapView;
@@ -53,13 +59,16 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        mMapView = (MapView) mView.findViewById(R.id.navigation_map);
+        mMapView = mView.findViewById(R.id.navigation_map);
         if (mMapView != null) {
             mMapView.onCreate(null);
             mMapView.onResume();
             mMapView.getMapAsync(this);
+
         }
+
     }
+
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
@@ -72,6 +81,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
         Bitmap Marker = Bitmap.createScaledBitmap(b, 84, 144, false);
         googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
         //.icon(BitmapDescriptorFactory.fromBitmap(Marker)
+
         googleMap.addMarker(new MarkerOptions().position(new LatLng(40.849938,14.259687)).title("Trattoria Don Vincenzo") .snippet("Via S.Biagio dei librai, 60 - Napoli"));
         googleMap.addMarker(new MarkerOptions().position(new LatLng(40.7875422,14.3736273)).title("Viaggia Quasi Gratis") .snippet("Via Circumvallazione, 163 - Torre del Greco"));
         googleMap.addMarker(new MarkerOptions().position(new LatLng(40.867937,14.268188)).title("I am Caso") .snippet("Via Santi Giovanni e Paolo, 3 - Napoli"));
@@ -103,9 +113,21 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
 
 
 
-
         CameraPosition NTA = CameraPosition.builder().target(new LatLng(40.855937,14.256437)).zoom(14).bearing(0).tilt(0).build();
 
         googleMap.moveCamera(CameraUpdateFactory.newCameraPosition(NTA));
+
+
+        CustomInfoWindowAdapter adapter = new CustomInfoWindowAdapter(MapFragment.this);
+        googleMap.setInfoWindowAdapter(adapter);
+
+
+
+    }
+
+
+    @Override
+    public void onInfoWindowClick(Marker marker) {
+
     }
 }

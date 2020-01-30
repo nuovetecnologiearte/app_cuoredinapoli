@@ -12,7 +12,7 @@
         tools:layout="@layout/fragment_battito" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_flusso"
         android:name="net.cuoredinapoli.battito.cuoredinapoli.ui.flusso.FlussoFragment"
         android:label="@string/title_flusso"
         tools:layout="@layout/fragment_flusso" />
