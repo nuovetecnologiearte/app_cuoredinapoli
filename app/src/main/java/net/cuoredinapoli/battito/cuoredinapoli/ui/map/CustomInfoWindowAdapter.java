@@ -27,9 +27,10 @@ public class CustomInfoWindowAdapter implements GoogleMap.InfoWindowAdapter {
         View view = context.getLayoutInflater().inflate(R.layout.fragment_infoview, null);
 
         TextView tvTitle = view.findViewById(R.id.intestazione);
-
+        TextView snippet = view.findViewById(R.id.snippet);
 
         tvTitle.setText(marker.getTitle());
+        snippet.setText(marker.getSnippet());
 
         return view;
     }
