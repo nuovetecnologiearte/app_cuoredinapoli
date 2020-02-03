@@ -8,70 +8,44 @@
     android:orientation="horizontal">
 
 
+    <!--    <ImageView-->
+<!--        android:id="@+id/anteprima"-->
+<!--        android:layout_width="142dp"-->
+<!--        android:layout_height="159dp"-->
+<!--        android:layout_marginEnd="4dp"-->
+<!--        android:src="@drawable/giappo"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.473"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
     <TextView
         android:id="@+id/intestazione"
-        android:layout_width="93dp"
-        android:layout_height="45dp"
+        android:layout_width="192dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:textSize="17sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/space"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/space2"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/snippet"
-        android:layout_width="92dp"
-        android:layout_height="83dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginEnd="10dp"
+        android:layout_width="195dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:textSize="17sp"
         android:textStyle="normal"
-        app:layout_constraintEnd_toStartOf="@+id/space"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/intestazione"
-        tools:ignore="MissingConstraints" />
-
-    <ImageView
-        android:id="@+id/anteprima"
-        android:layout_width="142dp"
-        android:layout_height="159dp"
-        android:layout_marginEnd="4dp"
-        android:src="@drawable/giappo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.473"
-        tools:ignore="MissingConstraints" />
-
-    <Space
-        android:id="@+id/space"
-        android:layout_width="6dp"
-        android:layout_height="140dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/anteprima"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Space
-        android:id="@+id/space2"
-        android:layout_width="113dp"
-        android:layout_height="6dp"
-        android:layout_marginEnd="7dp"
-        app:layout_constraintEnd_toEndOf="@+id/space"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <Space
-        android:id="@+id/space3"
-        android:layout_width="113dp"
-        android:layout_height="6dp"
-        android:layout_marginEnd="7dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/space"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/snippet"
+        app:layout_constraintTop_toBottomOf="@+id/intestazione"
         tools:ignore="MissingConstraints" />
 
 

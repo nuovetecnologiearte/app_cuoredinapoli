@@ -79,8 +79,13 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleM
         BitmapDrawable bitmapdraw=(BitmapDrawable)getResources().getDrawable(R.drawable.marker_cuore);
         Bitmap b=bitmapdraw.getBitmap();
         Bitmap marker = Bitmap.createScaledBitmap(b, 84, 129, false);
+        //rivenditori
+        BitmapDrawable bitmapdrawr=(BitmapDrawable)getResources().getDrawable(R.drawable.marker_shop);
+        Bitmap r=bitmapdrawr.getBitmap();
+        Bitmap markerr = Bitmap.createScaledBitmap(r, 84, 129, false);
+
         googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
-        //.icon(BitmapDescriptorFactory.fromBitmap(Marker)
+
 
 
         googleMap.addMarker(new MarkerOptions().position(new LatLng(40.849938,14.259687)).title("Trattoria Don Vincenzo") .snippet("Via S.Biagio dei librai, 60 - Napoli").icon(BitmapDescriptorFactory.fromBitmap(marker)));
@@ -111,6 +116,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleM
         googleMap.addMarker(new MarkerOptions().position(new LatLng(34.572562,135.489937)).title("99 Pizza Napoletana Gourmet") .snippet("Minamimikunigaokacho, 3 Chome−4−13 1階 - Osaka").icon(BitmapDescriptorFactory.fromBitmap(marker)));
         googleMap.addMarker(new MarkerOptions().position(new LatLng(40.843438,14.252937)).title("B&B Folle Città") .snippet("Via Cardinale Guglielmo Sanfelice, 38, 80134 Napoli NA").icon(BitmapDescriptorFactory.fromBitmap(marker)));
         googleMap.addMarker(new MarkerOptions().position(new LatLng(40.849188,14.250688)).title("Fico caffè") .snippet("Piazza Dante 35-36").icon(BitmapDescriptorFactory.fromBitmap(marker)));
+        googleMap.addMarker(new MarkerOptions().position(new LatLng(40.842188,14.248438)).title("Sorelle Talarico") .snippet("Vico Due Porte a Toledo, 39/40, 80134 Napoli NA").icon(BitmapDescriptorFactory.fromBitmap(markerr)));
 
 
 

@@ -19,7 +19,7 @@
 
     <item
         android:id="@+id/navigation_map"
-        android:icon="@drawable/iconamappa"
+        android:icon="@drawable/iconacuore"
         android:title="@string/title_map" />
 
 </menu>
