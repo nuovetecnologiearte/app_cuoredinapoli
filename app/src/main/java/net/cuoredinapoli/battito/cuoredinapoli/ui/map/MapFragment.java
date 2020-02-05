@@ -1,8 +1,10 @@
 package net.cuoredinapoli.battito.cuoredinapoli.ui.map;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -32,7 +34,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import org.w3c.dom.Text;
 
 
-public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleMap.OnInfoWindowClickListener {
+public class MapFragment extends Fragment implements OnMapReadyCallback {
 
     GoogleMap mGoogleMap;
     MapView mMapView;
@@ -116,7 +118,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleM
         googleMap.addMarker(new MarkerOptions().position(new LatLng(34.572562,135.489937)).title("99 Pizza Napoletana Gourmet") .snippet("Minamimikunigaokacho, 3 Chome−4−13 1階 - Osaka").icon(BitmapDescriptorFactory.fromBitmap(marker)));
         googleMap.addMarker(new MarkerOptions().position(new LatLng(40.843438,14.252937)).title("B&B Folle Città") .snippet("Via Cardinale Guglielmo Sanfelice, 38, 80134 Napoli NA").icon(BitmapDescriptorFactory.fromBitmap(marker)));
         googleMap.addMarker(new MarkerOptions().position(new LatLng(40.849188,14.250688)).title("Fico caffè") .snippet("Piazza Dante 35-36").icon(BitmapDescriptorFactory.fromBitmap(marker)));
-        googleMap.addMarker(new MarkerOptions().position(new LatLng(40.842188,14.248438)).title("Sorelle Talarico") .snippet("Vico Due Porte a Toledo, 39/40, 80134 Napoli NA").icon(BitmapDescriptorFactory.fromBitmap(markerr)));
+        googleMap.addMarker(new MarkerOptions().position(new LatLng(40.842188,14.248438)).title("Sorelle Talarico") .snippet("https://stackoverflow.com/questions/29302927/assign-a-click-listener-to-the-info-window-cannot-navigate-to-the-webpage-googl").icon(BitmapDescriptorFactory.fromBitmap(markerr)));
 
 
 
@@ -128,13 +130,28 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleM
         CustomInfoWindowAdapter adapter = new CustomInfoWindowAdapter(MapFragment.this);
         googleMap.setInfoWindowAdapter(adapter);
 
+        mGoogleMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
+            @Override
+            public void onInfoWindowClick(Marker marker) {
+                String myLatitude = String.valueOf(marker.getPosition().latitude);
+                String myLongitude = String.valueOf(marker.getPosition().longitude);
+                String labelLocation = marker.getTitle();
+
+                Intent intent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("geo:<" + myLatitude + ">,<" + myLongitude + ">?q=<" + myLatitude + ">,<" + myLongitude + ">(" + labelLocation + ")"));
+                startActivity(intent);
+
+
+
+
+            }
+        });
+
 
 
     }
 
 
-    @Override
-    public void onInfoWindowClick(Marker marker) {
 
-    }
+
 }

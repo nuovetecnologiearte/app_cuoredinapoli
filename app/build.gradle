@@ -8,8 +8,8 @@ android {
         applicationId "net.cuoredinapoli.battito.cuoredinapoli"
         minSdkVersion 21
         targetSdkVersion 29
-        versionCode 30
-        versionName "gvng2"
+        versionCode 31
+        versionName "ThnxPol"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
