@@ -118,7 +118,8 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
         googleMap.addMarker(new MarkerOptions().position(new LatLng(34.572562,135.489937)).title("99 Pizza Napoletana Gourmet") .snippet("Minamimikunigaokacho, 3 Chome−4−13 1階 - Osaka").icon(BitmapDescriptorFactory.fromBitmap(marker)));
         googleMap.addMarker(new MarkerOptions().position(new LatLng(40.843438,14.252937)).title("B&B Folle Città") .snippet("Via Cardinale Guglielmo Sanfelice, 38, 80134 Napoli NA").icon(BitmapDescriptorFactory.fromBitmap(marker)));
         googleMap.addMarker(new MarkerOptions().position(new LatLng(40.849188,14.250688)).title("Fico caffè") .snippet("Piazza Dante 35-36").icon(BitmapDescriptorFactory.fromBitmap(marker)));
-        googleMap.addMarker(new MarkerOptions().position(new LatLng(40.842188,14.248438)).title("Sorelle Talarico") .snippet("https://stackoverflow.com/questions/29302927/assign-a-click-listener-to-the-info-window-cannot-navigate-to-the-webpage-googl").icon(BitmapDescriptorFactory.fromBitmap(markerr)));
+        googleMap.addMarker(new MarkerOptions().position(new LatLng(40.795687,14.359937)).title("Casa KBirr") .snippet("Corso Vittorio Emanuele, 53, 80059 Torre del Greco NA").icon(BitmapDescriptorFactory.fromBitmap(markerr)));
+        googleMap.addMarker(new MarkerOptions().position(new LatLng(40.842188,14.248438)).title("Sorelle Talarico") .snippet("Vico Due Porte a Toledo, 39/40, 80134 Napoli NA").icon(BitmapDescriptorFactory.fromBitmap(markerr)));
 
 
 
