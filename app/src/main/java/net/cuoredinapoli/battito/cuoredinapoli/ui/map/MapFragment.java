@@ -3,8 +3,11 @@ package net.cuoredinapoli.battito.cuoredinapoli.ui.map;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.AssetManager;
+import android.content.res.Resources;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -41,6 +44,7 @@ import org.w3c.dom.Text;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 
 public class MapFragment extends Fragment implements OnMapReadyCallback {
@@ -48,7 +52,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
     GoogleMap mGoogleMap;
     MapView mMapView;
     View mView;
-    ArrayList<String> ins = new ArrayList<>();
+    HashMap<Marker, Drawable> hashMarkImg = new HashMap<>();
     public MapFragment(){
 
     }
@@ -113,8 +117,12 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
         Insegne arrayInsegne = new Gson().fromJson(myJson, Insegne.class);
 
         for (int i = 0; i<arrayInsegne.insegne.size(); i++){
-            googleMap.addMarker(new MarkerOptions().position(new LatLng(arrayInsegne.insegne.get(i).lat,arrayInsegne.insegne.get(i).lon)).title(arrayInsegne.insegne.get(i).title) .snippet(arrayInsegne.insegne.get(i).snippet).icon(BitmapDescriptorFactory.fromBitmap(marker)));
+            Marker m = googleMap.addMarker(new MarkerOptions().position(new LatLng(arrayInsegne.insegne.get(i).lat,arrayInsegne.insegne.get(i).lon)).title(arrayInsegne.insegne.get(i).title) .snippet(arrayInsegne.insegne.get(i).snippet).icon(BitmapDescriptorFactory.fromBitmap(marker)));
+            int resourceId = getResources().getIdentifier(arrayInsegne.insegne.get(i).image, "drawable", getContext().getPackageName());
+            Drawable drawable = getResources().getDrawable(resourceId);
+            hashMarkImg.put(m, drawable);
         }
+
 
 
         CameraPosition NTA = CameraPosition.builder().target(new LatLng(40.855937,14.256437)).zoom(14).bearing(0).tilt(0).build();
@@ -122,7 +130,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
         googleMap.moveCamera(CameraUpdateFactory.newCameraPosition(NTA));
 
 
-        CustomInfoWindowAdapter adapter = new CustomInfoWindowAdapter(MapFragment.this);
+        CustomInfoWindowAdapter adapter = new CustomInfoWindowAdapter(MapFragment.this, hashMarkImg );
         googleMap.setInfoWindowAdapter(adapter);
 
         mGoogleMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
@@ -135,9 +143,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
                 Intent intent = new Intent(Intent.ACTION_VIEW,
                         Uri.parse("geo:<" + myLatitude + ">,<" + myLongitude + ">?q=<" + myLatitude + ">,<" + myLongitude + ">(" + labelLocation + ")"));
                 startActivity(intent);
-
-
-
 
 
             }

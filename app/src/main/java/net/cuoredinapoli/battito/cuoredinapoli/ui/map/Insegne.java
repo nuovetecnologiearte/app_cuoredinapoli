@@ -21,6 +21,11 @@ public class Insegne {
 
             @SerializedName("snippet")
             public String snippet;
+
+            @SerializedName("image")
+            public String image;
+
+
         }
 
 
