@@ -1,11 +1,7 @@
 package net.cuoredinapoli.battito.cuoredinapoli.ui.map;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.res.AssetManager;
-import android.content.res.Resources;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
@@ -13,7 +9,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -27,23 +22,15 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.MapsInitializer;
 import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.model.BitmapDescriptor;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.android.gms.maps.SupportMapFragment;
 import com.google.gson.Gson;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-import org.w3c.dom.Text;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.ArrayList;
 import java.util.HashMap;
 
 
@@ -117,7 +104,13 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
         Insegne arrayInsegne = new Gson().fromJson(myJson, Insegne.class);
 
         for (int i = 0; i<arrayInsegne.insegne.size(); i++){
-            Marker m = googleMap.addMarker(new MarkerOptions().position(new LatLng(arrayInsegne.insegne.get(i).lat,arrayInsegne.insegne.get(i).lon)).title(arrayInsegne.insegne.get(i).title) .snippet(arrayInsegne.insegne.get(i).snippet).icon(BitmapDescriptorFactory.fromBitmap(marker)));
+            Marker m = googleMap.addMarker(new MarkerOptions()
+                            .position(new LatLng(arrayInsegne.insegne.get(i)
+                            .lat,arrayInsegne.insegne.get(i).lon))
+                            .title(arrayInsegne.insegne.get(i).title)
+                            .snippet(arrayInsegne.insegne.get(i).snippet)
+                            .icon(BitmapDescriptorFactory.fromBitmap(marker)));
+
             int resourceId = getResources().getIdentifier(arrayInsegne.insegne.get(i).image, "drawable", getContext().getPackageName());
             Drawable drawable = getResources().getDrawable(resourceId);
             hashMarkImg.put(m, drawable);
@@ -136,7 +129,8 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
         mGoogleMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
             @Override
             public void onInfoWindowClick(Marker marker) {
-                String myLatitude = String.valueOf(marker.getPosition().latitude);
+
+               String myLatitude = String.valueOf(marker.getPosition().latitude);
                 String myLongitude = String.valueOf(marker.getPosition().longitude);
                 String labelLocation = marker.getTitle();
 
