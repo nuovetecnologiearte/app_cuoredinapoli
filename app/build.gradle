@@ -8,7 +8,7 @@ android {
         applicationId "net.cuoredinapoli.battito.cuoredinapoli"
         minSdkVersion 21
         targetSdkVersion 29
-        versionCode 32
+        versionCode 33
         versionName "Quarantine"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
