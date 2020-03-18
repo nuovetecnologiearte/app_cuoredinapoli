@@ -40,11 +40,11 @@ public class CustomInfoWindowAdapter implements GoogleMap.InfoWindowAdapter {
 
 
         TextView tvTitle = view.findViewById(R.id.intestazione);
-        TextView snippet = view.findViewById(R.id.snippet);
+        //TextView snippet = view.findViewById(R.id.snippet);
         ImageView anteprima = view.findViewById(R.id.anteprima);
 
-        tvTitle.setText(marker.getTitle());
-        snippet.setText(marker.getSnippet());
+         tvTitle.setText(marker.getTitle());
+        //snippet.setText(marker.getSnippet());
         anteprima.setImageDrawable(hashMarkImg.get(marker));
 
         return view;
