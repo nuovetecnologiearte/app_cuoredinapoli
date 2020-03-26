@@ -21,4 +21,9 @@
         android:icon="@drawable/iconacuore"
         android:title="@string/title_map" />
 
+    <item
+        android:id="@+id/navigation_frag"
+        android:icon="@drawable/iconacuore"
+        android:title="@string/title_map" />
+
 </menu>

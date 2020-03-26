@@ -29,6 +29,12 @@
         android:label="@string/title_map"
         tools:layout="@layout/fragment_map" />
 
+    <fragment
+        android:id="@+id/navigation_frag"
+        android:name="net.cuoredinapoli.battito.cuoredinapoli.ui.frammenti.FragOpera"
+        android:label="@string/title_frag"
+        tools:layout="@layout/fragment_frag" />
+
 
 </navigation>
 
